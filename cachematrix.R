@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The purpose of these functions is to cache the computation of the inverse
+## of an invertible square matrix.
 
-## Write a short comment describing this function
+## This function constructs a matrix-like object that we can 
+## compute the inverse of and cache it using the cacheSolve function.
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -18,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function computes the inverse of a matrix made with the
+## makeCacheMatrix function and caches it.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
